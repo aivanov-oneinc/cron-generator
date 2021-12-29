@@ -103,8 +103,8 @@ namespace QuartzCronGeneratorLibrary.Tests
             const string expectedString = "MON,WED,FRI";
             Assert.Equal(expectedString, CronConverter.ToCronRepresentation(days));
 
-            const string exprectedString2 = "SAT,SUN";
-            Assert.Equal(exprectedString2, CronConverter.ToCronRepresentation(DaysOfWeek.Saturday | DaysOfWeek.Sunday));
+            const string expected = "SAT,SUN";
+            Assert.Equal(expected, CronConverter.ToCronRepresentation(DaysOfWeek.Saturday | DaysOfWeek.Sunday));
         }
 
         [Fact]
